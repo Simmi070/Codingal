@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            right: 30px;
+            border: 3px solid red;
+        }
+
+        div.absolute {
+            position: absolute;
+            left: 50px;
+            border: 3px solid orange;
+        }
+
+        div.relative {
+            position: relative;
+            left: 100px;
+            border: 3px solid yellow;
+        }
+
+        div.fixed {
+            position: fixed;
+            top: 0;
+            right: 20px;
+            width: 300px;
+            border: 3px solid green;
+        }
+
+        div.sticky {
+            position: sticky;
+            top: 1px;
+            left: 20px;
+            width: 100px;
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Positioning</h2>
+    <div>
+        This is a website about positioning
+    </div>
+    <div class="sticky">This is an example of a stycky positioning</div>
+    <div class="relative">This is an example of a relative positioning</div>
+    <div class="absolute">This is an example of an absolute positioning</div>
+    <div class="fixed">This is an example of a fixed positioning</div>
+    <br>
+</body>
+
+</html>
