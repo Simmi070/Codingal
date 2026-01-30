@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+
+    </script>
+    <style>
+        .nav1 {
+            background-color: blue;
+            height: 100px;
+            text-align: center;
+
+        }
+
+        h1 {
+            text-align: center;
+            text-size-adjust: 40px;
+        }
+        .grid-demo {
+
+display: grid;
+
+grid-template-areas:
+
+"header header"
+
+"main sidebar"
+
+"footer footer";
+
+grid-template-columns: 2fr 1fr;
+
+gap: 8px;
+
+margin-top: 15px;
+
+text-align: center;
+
+color: white;
+
+font-weight: bold;
+
+}
+
+.g-header { grid-area: header; background: #42a5f5; padding: 10px; }
+
+.g-main { grid-area: main; background: #66bb6a; padding: 20px; }
+
+.g-sidebar { grid-area: sidebar; background: #ffa726; padding: 20px; }
+
+.g-footer { grid-area: footer; background: #ab47bc; padding: 10px; }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav1 text-white">
+            <h1>HTML & CSS Basics Overview</h1>
+        </div>
+        <div class="container">
+            <div class="card">
+                <h2>Responsive Grid Layout</h2>
+                <p>Using <mark>CSS grid</mark> to build layouts</p>
+                <div class="grid-demo">
+                    <div class="g-header">Header</div>
+                    <div class="g-main">Main Content</div>
+                    <div class="g-sidebar">Sidebar</div>
+                    <div class="g-footer">Footer</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
