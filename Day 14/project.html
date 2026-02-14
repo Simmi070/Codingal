@@ -23,39 +23,105 @@
             text-align: center;
             text-size-adjust: 40px;
         }
+
         .grid-demo {
 
-display: grid;
+            display: grid;
 
-grid-template-areas:
+            grid-template-areas:
 
-"header header"
+                "header header"
 
-"main sidebar"
+                "main sidebar"
 
-"footer footer";
+                "footer footer";
 
-grid-template-columns: 2fr 1fr;
+            grid-template-columns: 2fr 1fr;
 
-gap: 8px;
+            gap: 8px;
 
-margin-top: 15px;
+            margin-top: 15px;
 
-text-align: center;
+            text-align: center;
 
-color: white;
+            color: white;
 
-font-weight: bold;
+            font-weight: bold;
 
-}
+        }
 
-.g-header { grid-area: header; background: #42a5f5; padding: 10px; }
+        .g-header {
+            grid-area: header;
+            background: #42a5f5;
+            padding: 10px;
+        }
 
-.g-main { grid-area: main; background: #66bb6a; padding: 20px; }
+        .g-main {
+            grid-area: main;
+            background: #66bb6a;
+            padding: 20px;
+        }
 
-.g-sidebar { grid-area: sidebar; background: #ffa726; padding: 20px; }
+        .g-sidebar {
+            grid-area: sidebar;
+            background: #ffa726;
+            padding: 20px;
+        }
 
-.g-footer { grid-area: footer; background: #ab47bc; padding: 10px; }
+        .g-footer {
+            grid-area: footer;
+            background: #ab47bc;
+            padding: 10px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h2 {
+            color: #1e6ecb;
+            margin-top: 0;
+        }
+
+        .highlight {
+            color: #1e6ecb;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th {
+            background: #1e6ecb;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        td {
+            padding: 8px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .footer {
+            background: #0f3c91;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
     </style>
 </head>
 
@@ -64,29 +130,31 @@ font-weight: bold;
         <div class="nav1 text-white">
             <h1>HTML & CSS Basics Overview</h1>
         </div><br><br>
-        </nav>
-        <div class="container">
-            <div class="card">
-                <h2>Responsive Grid Layout</h2>
-                <p>Using <mark>CSS grid</mark> to build layouts</p>
-                <div class="grid-demo">
-                    <div class="g-header">Header</div>
-                    <div class="g-main">Main Content</div>
-                    <div class="g-sidebar">Sidebar</div>
-                    <div class="g-footer">Footer</div><br>
-                </div>
-                <ul>
-                    <li>Flexible & Responsive</li>
-                    <li>Align Content</li>
-                    <li>Complex Layouts</li>
-                </ul>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <h2>Responsive Grid Layout</h2>
+            <p>Using <mark>CSS grid</mark> to build layouts</p>
+            <div class="grid-demo">
+                <div class="g-header">Header</div>
+                <div class="g-main">Main Content</div>
+                <div class="g-sidebar">Sidebar</div>
+                <div class="g-footer">Footer</div><br>
             </div>
+            <ul>
+                <li>Flexible & Responsive</li>
+                <li>Align Content</li>
+                <li>Complex Layouts</li>
+            </ul>
         </div>
-
+    </div>
+    <div class="container">
         <div class="card">
             <h2>Typography in CSS</h2>
             <p><b>Heading example</b></p>
-            <p>Paragraph text with styled font and <div class="blue">highlighted words.</div></p>
+            <p>Paragraph text with styled font and
+            <div class="blue">highlighted words.</div>
+            </p>
             <p>Inline text example using <code>span</code> tag</p>
             <ul>
                 <li>Font size & Family</li>
@@ -94,6 +162,8 @@ font-weight: bold;
                 <li>Text Spacing</li>
             </ul>
         </div>
+    </div>
+    <div class="container">
         <div class="card">
             <h2>HTML Tables</h2>
             <p>Basic table structure:</p>
@@ -122,15 +192,20 @@ font-weight: bold;
                     <td>UK</td>
                     <td>92</td>
                 </tr>
-                
+
             </table>
         </div>
-        <div class="container">
-            <h2><p>Mark & Code</p></h2>
+    </div>
+    <div class="container">
+        <div class="card">
+            <h2>
+                <p>Mark & Code</p>
+            </h2>
             <p>Use <mark>mark</mark> to highlight text</p>
             <p>Use <code>div class="container"</code> to show code snippets</p>
         </div>
-        
-    
+    </div>
+    <footer class="footer">© 2026 Advanced HTML & CSS Practice</footer>
+
 
 </html>
