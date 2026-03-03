@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Lists</h1>
+    <h3>Numbers from 1 to 5</h3>
+    <p id="numresult"></p><br>
+    <h3>First 5 letters of the alphabet</h3>
+    <p id="alresult"></p><br>
+    <script>
+        var alphabet = ["A", "B", "C", "D", "E"];
+        var text = "";
+        var i;
+        for (i = 0; i < alphabet.length; i++) { text += alphabet[i] + "<br>" }
+        document.getElementById("alresult").innerHTML = text;
+        var numbers = ["1", "2", "3", "4", "5"];
+        var text = "";
+        var i;
+        for (i = 0; i < numbers.length; i++) { text += numbers[i] + "<br>" }
+        document.getElementById("numresult").innerHTML = text;
+    </script>
+</body>
+
+</html>
