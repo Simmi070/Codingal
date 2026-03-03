@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Multiplication</h2>
+    <p>What is 7 multiplied by 5?</p><br>
+    <button onclick="myfunction(7,5)">See result</button><br><br>
+    <p id="result1"></p>
+    <p>What is 38 multiplied by 27?</p><br>
+    <p id="result2"></p>
+    <button onclick="secondfunction(38,27)">See result</button><br>
+    <script>
+        function myfunction(x, y) {
+            if (y === undefined) {
+                y = 4;
+            }
+            document.getElementById("result1").innerHTML = (x * y);
+        }
+        function secondfunction(a, b) {
+            if (b === undefined) {
+                b = 15;
+            }
+            document.getElementById("result2").innerHTML = (a * b);
+        }
+    </script>
+</body>
+
+</html>
