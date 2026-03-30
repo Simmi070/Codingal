@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Javascript Regex Validation</h2>
+    <p>Enter a value to check if it contains <strong>ONLY</strong> numbers:</p>
+    <input type="text" id="userInput" placeholder="Type something...">
+    <button onclick="checkInput()">Validate</button>
+    <p id="validation-result"></p>
+    <script>
+        function checkInput() {
+            var input = document.getElementById("userInput").value;
+            var pattern = /^\d+$/;
+            var result = pattern.test(input);
+            if (result) {
+                document.getElementById("validation-result").innerHTML = "✅ Success: This is a valid number."
+                document.getElementById("validation-result").style.color = "green";
+            } else {
+                document.getElementById("validation-result").innerHTML = "❌ Error: Please enter numbers only."
+                document.getElementById("validation-result").style.color = "red";
+            }
+        }
+    </script>
+</body>
+
+</html>

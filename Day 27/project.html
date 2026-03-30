@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Map and Sort Array</h2>
+    <p><strong>Original Mapped Array:</strong><span id="original"></span></p>
+    <p><strong>Sorted Result:</strong><span id="result"></span></p>
+    <button onclick="sortAscending()">Sort Ascending</button>
+    <button onclick="sortDescending()">Sort Descending</button>
+
+    <script>
+        // 1. Create an initial array
+        var numbers = [25, 8, 15, 4, 12];
+
+        // 2. Map the array (multiply each element by 10)
+        var mappedArray = numbers.map(function(num) {
+            return num * 10;
+        });
+
+        // Display the mapped array initially
+        document.getElementById("original").innerHTML = mappedArray;
+
+        // 3. Function to sort in Ascending Order
+        function sortAscending() {
+            mappedArray.sort(function(a, b) { return a - b; });
+            document.getElementById("result").innerHTML = mappedArray;
+        }
+
+        // 4. Function to sort in Descending Order
+        function sortDescending() {
+            mappedArray.sort(function(a, b) { return b - a; });
+            document.getElementById("result").innerHTML = mappedArray;
+        }
+    </script>
+</body>
+</html>
