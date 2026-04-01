@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Clothes:</h2>
+    <p><strong>Before the shoes:</strong></p>
+    <p id="demo"></p>
+    <p><strong>Under the jacket:</strong></p>
+    <p id="demo1"></p>
+    <p><strong>To do sports:</strong></p>
+    <p id="demo2"></p>
+    <script>
+        var clothes = [
+            "T-shirt",
+            "Pants",
+            "Socks",
+            "Skirt",
+            "Shoes",
+            "Dress",
+            "Tracksuit"
+        ];
+        document.getElementById("demo").innerHTML = clothes[3];
+        document.getElementById("demo1").innerHTML = clothes[1];
+        document.getElementById("demo2").innerHTML = clothes[7];
+    </script>
+
+</html>
