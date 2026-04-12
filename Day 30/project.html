@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Los Olivos Student's:</h1>
+    <h2>Fill the form:</h2>
+    <form>
+    <legend>Only student's under 16</legend>
+    <p><bold>Name:</bold></p>
+    <input type="text" required>
+    <p><bold>Age:</bold></p>
+    <input id="id" type="number" min="0" max="16" required>
+    <p><bold>School code:</bold></p>
+    <input type="number" required><br><br>
+    <button onclick="myFunction()">OK</button>
+    <p id="result"></p>
+    </form>
+    <script>
+        function myFunction() {
+            var inpobj = document.getElementById("id");
+            if (!inpobj.checkValidity()) {
+                document.getElementById("result").innerHTML = inpobj.validationMessage;
+            } else {
+                document.getElementById("result").innerHTML = "Input OK";
+            }
+        }
+    </script>
+</body>
+
+</html>
