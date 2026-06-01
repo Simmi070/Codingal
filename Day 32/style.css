@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     height: 100%;
     margin: 0;
     font-size: 16px;
@@ -8,6 +9,7 @@ body, html {
     color: #666;
     background-color: #b6f8ef;
 }
+
 .topnav a {
     float: left;
     color: #1affa3;
@@ -16,11 +18,15 @@ body, html {
     text-decoration: none;
     font-size: 15px;
 }
+
 .topnav a:hover {
     background-color: #ddd;
-    color:black;
+    color: black;
 }
-.pimg1, .pimg2, .pimg3 {
+
+.pimg1,
+.pimg2,
+.pimg3 {
     position: relative;
     opacity: 0.70;
     background-position: center;
@@ -28,30 +34,37 @@ body, html {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 .pigm1 {
-    background-image: url(dessert 1.jpg);
+    background-image: url(desert1.jpg);
     min-height: 100%;
 }
+
 .pigm2 {
-    background-image: url(noodles 3.jpg);
+    background-image: url(dessert2.jpg);
     min-height: 400px;
 }
+
 .pigm3 {
-    background-image: url(dessert 3.jpg);
+    background-image: url(noodles3.jpg);
     min-height: 400px;
 }
+
 .section {
     text-align: center;
     padding: 50px 80px;
 }
+
 .section-light {
     background-color: #f4f4f4;
     color: #666;
 }
+
 .section-dark {
     background-color: #282e34;
     color: #ddd;
 }
+
 .ptext {
     position: absolute;
     top: 50%;
@@ -62,16 +75,22 @@ body, html {
     letter-spacing: 8px;
     text-transform: uppercase;
 }
+
 .ptext .border {
     background-color: #111;
     color: #fff;
     padding: 20px;
 }
+
 .ptext .border.trans {
     background-color: transparent;
 }
+
 @media(max-width:568px) {
-    .pigm1, .pigm2, .pigm3 {
+
+    .pigm1,
+    .pigm2,
+    .pigm3 {
         background-attachment: scroll;
     }
 }
